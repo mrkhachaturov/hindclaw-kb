@@ -1,0 +1,30 @@
+{
+  "name": "hindclaw-kb",
+  "version": "1.0.0",
+  "description": "Product-wide code-first knowledge base for Hindclaw with component-aware version tracking",
+  "type": "module",
+  "bin": {
+    "hindclaw-kb": "./bin/cli.js"
+  },
+  "main": "lib/db.js",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "test": "node --test tests/",
+    "index": "node bin/cli.js index",
+    "query": "node bin/cli.js query"
+  },
+  "keywords": ["hindclaw", "knowledge-base", "mcp", "vector-search"],
+  "author": "Ruben Khachaturov",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1",
+    "commander": "^14.0.3",
+    "sqlite-vec": "0.1.7-alpha.2",
+    "zod": "^3.25.76"
+  },
+  "optionalDependencies": {
+    "@huggingface/transformers": "^3.8.0"
+  }
+}
